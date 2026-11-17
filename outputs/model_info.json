@@ -1,0 +1,29 @@
+{
+  "ahp_weights": {
+    "Low salinity": 0.378,
+    "Crop vigour (NDVI)": 0.245,
+    "Soil texture": 0.153,
+    "Rainfall": 0.092,
+    "Cooler surface": 0.092,
+    "Gentle slope": 0.041
+  },
+  "ahp_consistency_ratio": 0.017,
+  "pixel_km2": 0.0111,
+  "farmed_km2": 3289,
+  "desert_km2": 2851,
+  "class_thresholds": {
+    "S1": ">=0.70",
+    "S2": "0.55-0.70",
+    "S3": "0.40-0.55",
+    "N": "<0.40"
+  },
+  "fast_decline_rule": "MK p<0.05 AND rain-adjusted OLS slope<0 with p<0.05 AND Sen slope <= -0.04 per decade",
+  "robustness": {
+    "fast_decline_pixels_also_negative_2000_2021_pct": 100.0,
+    "fast_decline_pixels_also_significant_2000_2021_pct": 85.4,
+    "improving_pixels_still_improving_after_rain_adjustment_pct": 55.6,
+    "improving_pixels_also_positive_2000_2021_pct": 100.0,
+    "farmed_zone_mean_trend_per_decade_2000_2025": 0.05,
+    "farmed_zone_mean_trend_per_decade_2000_2021": 0.0364
+  }
+}
